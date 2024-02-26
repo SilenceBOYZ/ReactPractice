@@ -1,0 +1,215 @@
+:root {
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todolistapp {
+  width: 114rem;
+  margin: 8rem auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 8rem 1rem rgba(0, 0, 0, 0.08);
+  padding: 2rem 0;
+  padding-bottom: 8rem;
+}
+
+.todolistapp h1 {
+  padding-top: 1.5rem;
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 8rem;
+}
+
+.workSpaceWrap {
+  margin: 0 auto;
+  display: flex;
+  width: 100rem;
+  gap: 2rem;
+}
+
+.formSpace {
+  width: 33.33333%;
+  background-color: #ffb2b2;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #242323;
+  font-weight: 600;
+}
+
+.formSpace h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.formSpace label {
+  display: block;
+  font-size: 2.4rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.formSpace input {
+  display: block;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border: none;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.formSpace input[type="time"] {
+  padding: 1rem 2rem;
+}
+
+.workListSpace {
+  width: 66.77777%;
+  height: 50rem;
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 0.8rem;
+  position: relative;
+  z-index: 99;
+  padding: 3rem;
+}
+
+.workListSpace .title {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  display: flex;
+  width: 30rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  background-color: #a2df42;
+  z-index: 1;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  right: 0.5rem;
+  top: -4.5rem;
+  display: flex;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  background-color: #639aff;
+  z-index: 1;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: block;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.workListBtn {
+  position: absolute;
+  right: 2rem;
+  bottom: -2rem;
+  display: flex;
+  font-size: 1.8rem;
+  padding: 1rem;
+  background-color: #ff0606;
+  color: #fff;
+  z-index: 1;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  border: none;
+}
+
+
+.workListBtnRemove {
+  right: 12rem;
+  bottom: -2rem;
+  background-color: #639aff;
+}
+
+.WorkToDoListWrap {
+  padding: 2rem;
+  overflow-y: scroll;
+  height: 40rem;
+}
+
+.WorkToDoList {
+  padding: 2rem;
+  border-radius: .8rem;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.WorkToDoList.WorkToDoListActive {
+  background-color: #569beb;
+}
+
+.title-workList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-workList:first-child{
+  margin-bottom: 1rem;
+}
+
+.title-workList span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #242323;
+}
+
+.title-workList h3 {
+  margin-left: auto;
+  font-size: 1.8rem;
+}
+
+h3.workTitle {
+  font-size: 2.4rem;
+}
+
+.Message {
+  display: block;
+  font-size: 3.6rem;
+  text-align: center;
+}
